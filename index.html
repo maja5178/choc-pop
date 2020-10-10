@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        /*    general    */
+        body {
+            margin: auto;
+            background-image: url('billeder/konfetti_baggrund.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        /*    general slut    */
+
+        .img_small {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /******************** nav **********************/
+
+
+
+        .navbar-light .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0);
+        }
+
+        .bg-light {
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        /******************** nav slut **********************/
+
+
+        /****************    carousel     ********************/
+        .carousel-caption {
+            right: 50%;
+            bottom: 30%;
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .carousel-dark .carousel-indicators li {
+            background-color: #1f24c3;
+        }
+
+        /****************    carousel slut    ********************/
+
+        .baggrund_container {
+            background-color: white;
+            width: 100%;
+            height: auto;
+
+            padding: 5vw;
+
+        }
+
+
+        #Nye_varianter {
+            margin: 5vw;
+        }
+
+        .tag_text {
+            text-align: center;
+        }
+
+
+        #about .container {
+            margin: 5vw;
+        }
+
+        /*
+.Litchi {
+position: relative;
+top: 0;
+left: 0;
+}
+
+.Litchi .img_1 {
+position: relative;
+top: 0;
+left: 0;
+}
+
+.Litchi .img_2 {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.Litchi .img_2:hover {
+display: none;
+}
+*/
+
+    </style>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" aria-current="page" href="index.html"><img src="billeder/mini_logo.png" alt="Choc & Pop lange logo til nav bar" width="auto" height="50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Om os</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar slut -->
+
+    <!--  carousel  -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleDark" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleDark" data-slide-to="1"></li>
+            <!--            <li data-target="#carouselExampleDark" data-slide-to="2"></li>-->
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="5000">
+                <img src="billeder/test_baggrund.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>You know you wants to</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="5000">
+                <img src="billeder/test_baggrund.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <!--
+            <div class="carousel-item">
+                <img src="billeder/konfetti_baggrund.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+-->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <!--  carousel slut -->
+
+
+
+    <!--
+    <div id="top_tag_line" class="p-5">
+        <div class="tag_text">
+            <h1>You know you wants to</h1>
+        </div>
+    </div>
+-->
+
+    <section id="about" class="">
+        <div class="container">
+            <div class="row offset-md-1 align-items-center">
+                <div class="col col-11 col-md-5">
+                    <h1>Om os</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quibusdam accusantium necessitatibus nesciunt non ea officia debitis. Eaque laboriosam dolorum animi delectus similique explicabo optio aliquid earum, doloribus minus praesentium!</p>
+                </div>
+                <div class="col col-11 col-md-5">
+                    <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Nye_varianter" class="">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 text-center ">
+                    <h1>Nyhed</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="kiwi col-12 col-md-4">
+                    <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="" class="img img_small kiwi_img p-4" alt="">
+                </div>
+                <div class="Litchi col-12 col-md-4 ">
+                    <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
+                    <img src="billeder/produkt/MockUp-litchi_plain_pink.png" class="img_2 img_small p-4" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="baggrund_container">
+
+        <footer>
+
+
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
