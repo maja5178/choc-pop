@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
 
@@ -15,7 +16,7 @@
         /*    general    */
         body {
             margin: auto;
-            background-image: url('billeder/konfetti_baggrund_02.png');
+            background-image: url('billeder/konfetti_baggrund_03.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -27,6 +28,45 @@
 
         html {
             scroll-behavior: smooth;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #F4AD3B;
+            font-weight: 900;
+            font-size: 2.5rem
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            color: #F9F3E1;
+            font-weight: 700;
+            font-size: 2rem;
+
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            color: #F9F3E1;
+            font-weight: 400;
+            font-size: 1.3rem;
+
+        }
+
+        h5 {
+            font-family: 'Roboto', sans-serif;
+            color: #F9F3E1;
+            font-weight: 500;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: #242424;
+            font-weight: 400;
+            font-size: 1.2rem;
+
         }
 
 
@@ -99,25 +139,25 @@
         .box_txt {
             position: relative;
             text-align: center;
-            color: white;
+
 
         }
 
         .pro_tekst {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 35%;
+            left: 41%;
             transition: .5s ease;
-            opacity: 0%
+            display: none
         }
 
         .box_txt:hover .pro_tekst {
-            opacity: 100%
+            display: block;
         }
 
         .box_txt:hover img {
             transition: .5s ease;
-            opacity: 70%
+            opacity: 75%
         }
 
         /*
@@ -193,26 +233,20 @@ display: none;
                 <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/test_splach.mp4" loop muted class="d-block w-100"></video>
 
                 <div class="carousel-caption">
-                    <h5>You know you wants to</h5>
-                    <p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-interval="6000">
-                <img src="billeder/test_baggrund.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>You know you wants to</h3>
+                    <h4 class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</h4>
                 </div>
             </div>
             <!--
-            <div class="carousel-item">
-                <img src="billeder/konfetti_baggrund.png" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-interval="6000">
+                <img src="billeder/test_baggrund.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Second slide label</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                 </div>
             </div>
 -->
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -304,25 +338,23 @@ display: none;
                         <h1>Alle vores pordukter</h1>
                     </div>
                 </div>
-                <div class="row gx-5 ">
-                    <div class="kiwi col-12 col-md-4 box_txt">
+                <div class="row ">
+                    <div class="kiwi col-11 col-md-4 box_txt">
                         <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="" class="shadow img img_small kiwi_img m-4" alt="">
                         <div class="pro_tekst">
-                            <p>Kiwi</p>
+                            <h5> Kiwi </h5>
                         </div>
                     </div>
-                    <div class="original col-12 col-md-4 box_txt">
-                        <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
+                    <div class="original col-11 col-md-4 box_txt">
                         <img src="billeder/produkt/MockUp-chokolade_blue.png" class="shadow img_2 img_small m-4" alt="">
                         <div class="pro_tekst">
-                            <p>Original</p>
+                            <h5>Original</h5>
                         </div>
                     </div>
-                    <div class="litchi col-12 col-md-4 box_txt">
-                        <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
+                    <div class="litchi col-11 col-md-4 box_txt">
                         <img src="billeder/produkt/MockUp-litchi_plain_pink.png" class="shadow img_2 img_small m-4" alt="">
                         <div class="pro_tekst">
-                            <p>Litchi</p>
+                            <h5>Litchi</h5>
                         </div>
                     </div>
                 </div>
@@ -338,14 +370,14 @@ display: none;
                         <h6>Følg os på</h6>
                     </div>
                 </div>
-                <div class="row offset-5">
-                    <div class="col-1">
+                <div class="row  offset-2 offset-md-5">
+                    <div class="col-3 col-md-1">
                         <img src="billeder/mini_logo.png" alt="">
                     </div>
-                    <div class="col-1">
+                    <div class="col-3 col-md-1">
                         <img src="billeder/mini_logo.png" alt="">
                     </div>
-                    <div class="col-1">
+                    <div class="col-3 col-md-1">
                         <img src="billeder/mini_logo.png" alt="">
                     </div>
                 </div>
@@ -368,13 +400,14 @@ display: none;
 
 
 
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="animation.js"></script>
+
+
+
 
 </body>
 
