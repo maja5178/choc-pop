@@ -15,7 +15,7 @@
         /*    general    */
         body {
             margin: auto;
-            background-image: url('billeder/konfetti_baggrund.png');
+            background-image: url('billeder/konfetti_baggrund_02.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -42,11 +42,11 @@
 
 
         .navbar-light .navbar-toggler {
-            border-color: rgba(0, 0, 0, 0);
+            border-color: #F9F3E1;
         }
 
         .bg-light {
-            background-color: rgb(255, 255, 255) !important;
+            background-color: #F9F3E1 !important;
         }
 
         /******************** nav slut **********************/
@@ -64,18 +64,20 @@
             border-radius: 50%;
         }
 
+        /*
         .carousel-dark .carousel-indicators li {
             background-color: #1f24c3;
         }
+*/
 
         /****************    carousel slut    ********************/
 
         .baggrund_container {
-            background-color: white;
+            background-color: #F9F3E1;
             width: 100%;
             height: auto;
 
-            padding: 5vw;
+            padding: 3vw;
 
         }
 
@@ -91,6 +93,31 @@
 
         #about .container {
             margin: 5vw;
+        }
+
+
+        .box_txt {
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .pro_tekst {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: .5s ease;
+            opacity: 0%
+        }
+
+        .box_txt:hover .pro_tekst {
+            opacity: 100%
+        }
+
+        .box_txt:hover img {
+            transition: .5s ease;
+            opacity: 70%
         }
 
         /*
@@ -123,7 +150,7 @@ display: none;
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow">
         <div class="container-fluid">
             <a class="navbar-brand" aria-current="page" href="index.html"><img src="billeder/mini_logo.png" alt="Choc & Pop lange logo til nav bar" width="auto" height="50"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +163,16 @@ display: none;
                         <a class="nav-link" href="#about">Om os</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#Nye_varianter">Nyheder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kompetition">Konkurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find os</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Alle_produkter">Produkter</a>
                     </li>
 
                 </ul>
@@ -146,7 +182,7 @@ display: none;
     <!-- nav bar slut -->
 
     <!--  carousel  -->
-    <div id="carouselExampleDark" class="carousel carousel-light slide" data-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-light slide shadow" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleDark" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleDark" data-slide-to="1"></li>
@@ -154,7 +190,7 @@ display: none;
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="6000">
-                <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/Sequence%2001.mp4" loop muted class="d-block w-100"></video>
+                <video preload="auto" autoplay="autoplay" type="video/mp4" src="video/test_splach.mp4" loop muted class="d-block w-100"></video>
 
                 <div class="carousel-caption">
                     <h5>You know you wants to</h5>
@@ -201,13 +237,13 @@ display: none;
 
     <section id="about" class="">
         <div class="container">
-            <div class="row offset-md-1 align-items-center">
+            <div class="row offset-sm-1 align-items-center">
                 <div class="col col-11 col-md-5">
                     <h1>Om os</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quibusdam accusantium necessitatibus nesciunt non ea officia debitis. Eaque laboriosam dolorum animi delectus similique explicabo optio aliquid earum, doloribus minus praesentium!</p>
                 </div>
-                <div class="col col-11 col-md-5">
-                    <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="">
+                <div class="col col-11 col-md-6">
+                    <img src="billeder/produkt_billede.JPG" alt="" class="shadow-lg">
                 </div>
             </div>
         </div>
@@ -217,30 +253,116 @@ display: none;
     <section id="Nye_varianter" class="">
         <div class="container">
             <div class="row">
-                <div class=" col-12 text-center ">
+                <div class=" col-12 text-center">
                     <h1>Nyhed</h1>
                 </div>
             </div>
-            <div class="row justify-content-center ">
-                <div class="kiwi col-12 col-md-4">
-                    <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="" class="img img_small kiwi_img p-4" alt="">
-                </div>
-                <div class="Litchi col-12 col-md-4 ">
-                    <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
-                    <img src="billeder/produkt/MockUp-litchi_plain_pink.png" class="img_2 img_small p-4" alt="">
+            <div class="row">
+                <img src="billeder/produkt/MockUp-kiwi_frugt.png" alt="">
+            </div>
+            <div class="row">
+                <div class=" col-6 offset-3 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa, corporis sapiente laudantium? Maiores est esse facere quis itaque ullam assumenda molestiae vitae facilis autem, reprehenderit labore dolorum quo quibusdam!</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div class="baggrund_container">
-
-        <footer>
+    <div class="baggrund_container shadow">
 
 
+        <section id="Kompetition">
+            <div class="container-fluid">
+                <div class="row offset-sm-1 align-items-center">
+                    <div class="col-11 col-md-6">
+                        <img src="billeder/web_konkurance.png" alt="" class="shadow-lg">
+                    </div>
+                    <div class="col-11 col-md-5">
+                        <h1>Om os</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quibusdam accusantium necessitatibus nesciunt non ea officia debitis. Eaque laboriosam dolorum animi delectus similique explicabo optio aliquid earum, doloribus minus praesentium!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="Find">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Find os nær dig</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Alle_produkter" class="">
+            <div class="container px-5">
+                <div class="row">
+                    <div class=" col-12 text-center">
+                        <h1>Alle vores pordukter</h1>
+                    </div>
+                </div>
+                <div class="row gx-5 ">
+                    <div class="kiwi col-12 col-md-4 box_txt">
+                        <img src="billeder/produkt/MockUp-kiwi_plain_green.png" alt="" class="shadow img img_small kiwi_img m-4" alt="">
+                        <div class="pro_tekst">
+                            <p>Kiwi</p>
+                        </div>
+                    </div>
+                    <div class="original col-12 col-md-4 box_txt">
+                        <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
+                        <img src="billeder/produkt/MockUp-chokolade_blue.png" class="shadow img_2 img_small m-4" alt="">
+                        <div class="pro_tekst">
+                            <p>Original</p>
+                        </div>
+                    </div>
+                    <div class="litchi col-12 col-md-4 box_txt">
+                        <!--                    <img src="billeder/produkt/MockUp-litchi_frught.png" class=" img_1 img_small p-4" alt="">-->
+                        <img src="billeder/produkt/MockUp-litchi_plain_pink.png" class="shadow img_2 img_small m-4" alt="">
+                        <div class="pro_tekst">
+                            <p>Litchi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6>Følg os på</h6>
+                    </div>
+                </div>
+                <div class="row offset-5">
+                    <div class="col-1">
+                        <img src="billeder/mini_logo.png" alt="">
+                    </div>
+                    <div class="col-1">
+                        <img src="billeder/mini_logo.png" alt="">
+                    </div>
+                    <div class="col-1">
+                        <img src="billeder/mini_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <p>hej</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <p>hej</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <p>hej</p>
+                    </div>
+                </div>
+            </div>
         </footer>
+
     </div>
 
 
