@@ -10,11 +10,12 @@ sections.forEach((section) => {
         y: 50,
         duration: 1,
         stagger: 1,
+        ease: "none",
         scrollTrigger: {
             trigger: section,
-            start: "top 100%",
-            end: "75% 80%",
-            markers: true,
+            start: "top bottom",
+            end: "top center",
+            //            markers: true,
             scrub: true,
         },
     });
