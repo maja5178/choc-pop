@@ -1,0 +1,170 @@
+ /*    general    */
+ body {
+     margin: auto;
+     background-image: url('billeder/konfetti_baggrund_03.png');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ .baggrund_container {
+     background-color: #F9F3E1;
+     width: 100%;
+     height: auto;
+
+     padding: 3vw;
+
+ }
+
+ /******************fonte********************/
+
+ h1 {
+     font-family: 'Roboto', sans-serif;
+     color: #F4AD3B;
+     font-weight: 900;
+     font-size: 2.5rem
+ }
+
+ h3 {
+     font-family: 'Roboto', sans-serif;
+     color: #F9F3E1;
+     font-weight: 700;
+     font-size: 2rem;
+
+ }
+
+ h4 {
+     font-family: 'Roboto', sans-serif;
+     color: #F9F3E1;
+     font-weight: 400;
+     font-size: 1.3rem;
+
+ }
+
+ h5 {
+     font-family: 'Roboto', sans-serif;
+     color: #F9F3E1;
+     font-weight: 500;
+     font-size: 2.5rem;
+     letter-spacing: 1px;
+ }
+
+ p {
+     font-family: 'Roboto', sans-serif;
+     color: #242424;
+     font-weight: 400;
+     font-size: 1.1rem;
+
+ }
+
+ /******************fonte slut********************/
+
+
+ /*    general slut    */
+
+ .img_small {
+     max-width: 100%;
+     height: auto;
+ }
+
+ /******************** nav **********************/
+
+ .navbar-light .navbar-toggler {
+     border-color: #F9F3E1;
+ }
+
+ .bg-light {
+     background-color: #F9F3E1 !important;
+ }
+
+ /******************** nav slut **********************/
+
+
+
+
+ /****************    carousel     ********************/
+ .carousel-caption {
+     right: 50%;
+     bottom: 17%;
+ }
+
+ .carousel-indicators li {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+ }
+
+ /*
+        .carousel-dark .carousel-indicators li {
+            background-color: #1f24c3;
+        }
+*/
+
+ /****************    carousel slut    ********************/
+
+
+ /****************    #ABOUT   ********************/
+ #about .container {
+     margin: 5vw;
+ }
+
+ /****************    #ABOUT SLUT   ********************/
+
+
+ /****************    #VARIANTER    ********************/
+ #Nye_varianter {
+     margin: 3vw;
+ }
+
+ /****************    #VARIANTER SLUT   ********************/
+
+/*
+ .tag_text {
+     text-align: center;
+ }*/
+
+
+
+
+
+
+ /****************    #NYE_PRODUKTER   ********************/
+ #Alle_produkter {
+     margin-top: 8vw;
+     margin-bottom: 8vw;
+ }
+
+
+ .box_txt {
+     position: relative;
+     text-align: center;
+
+
+ }
+
+ .pro_tekst {
+     position: absolute;
+     top: 35%;
+     left: 41%;
+     transition: .5s ease;
+     display: none
+ }
+
+ .box_txt:hover .pro_tekst {
+     display: block;
+ }
+
+ .box_txt:hover img {
+     transition: .5s ease;
+     opacity: 75%
+ }
+
+ /****************    #NYE_PRODUKTER SLUT   ********************/

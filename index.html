@@ -6,185 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Choc&Pop</title>
 
-    <style>
-        /*    general    */
-        body {
-            margin: auto;
-            background-image: url('billeder/konfetti_baggrund_03.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        img {
-            max-width: 100%;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            color: #F4AD3B;
-            font-weight: 900;
-            font-size: 2.5rem
-        }
-
-        h3 {
-            font-family: 'Roboto', sans-serif;
-            color: #F9F3E1;
-            font-weight: 700;
-            font-size: 2rem;
-
-        }
-
-        h4 {
-            font-family: 'Roboto', sans-serif;
-            color: #F9F3E1;
-            font-weight: 400;
-            font-size: 1.3rem;
-
-        }
-
-        h5 {
-            font-family: 'Roboto', sans-serif;
-            color: #F9F3E1;
-            font-weight: 500;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-family: 'Roboto', sans-serif;
-            color: #242424;
-            font-weight: 400;
-            font-size: 1.2rem;
-
-        }
-
-
-        /*    general slut    */
-
-        .img_small {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /******************** nav **********************/
-
-
-
-        .navbar-light .navbar-toggler {
-            border-color: #F9F3E1;
-        }
-
-        .bg-light {
-            background-color: #F9F3E1 !important;
-        }
-
-        /******************** nav slut **********************/
-
-
-        /****************    carousel     ********************/
-        .carousel-caption {
-            right: 50%;
-            bottom: 30%;
-        }
-
-        .carousel-indicators li {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
-        /*
-        .carousel-dark .carousel-indicators li {
-            background-color: #1f24c3;
-        }
-*/
-
-        /****************    carousel slut    ********************/
-
-        .baggrund_container {
-            background-color: #F9F3E1;
-            width: 100%;
-            height: auto;
-
-            padding: 3vw;
-
-        }
-
-
-        #Nye_varianter {
-            margin: 5vw;
-        }
-
-        .tag_text {
-            text-align: center;
-        }
-
-
-        #about .container {
-            margin: 5vw;
-        }
-
-
-        .box_txt {
-            position: relative;
-            text-align: center;
-
-
-        }
-
-        .pro_tekst {
-            position: absolute;
-            top: 35%;
-            left: 41%;
-            transition: .5s ease;
-            display: none
-        }
-
-        .box_txt:hover .pro_tekst {
-            display: block;
-        }
-
-        .box_txt:hover img {
-            transition: .5s ease;
-            opacity: 75%
-        }
-
-        /*
-.Litchi {
-position: relative;
-top: 0;
-left: 0;
-}
-
-.Litchi .img_1 {
-position: relative;
-top: 0;
-left: 0;
-}
-
-.Litchi .img_2 {
-position: absolute;
-top: 0;
-left: 0;
-}
-
-.Litchi .img_2:hover {
-display: none;
-}
-*/
-
-    </style>
 
 </head>
 
@@ -209,10 +39,10 @@ display: none;
                         <a class="nav-link" href="#Kompetition">Konkurance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Find os</a>
+                        <a class="nav-link" href="#Alle_produkter">Produkter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Alle_produkter">Produkter</a>
+                        <a class="nav-link" href="#Find">Find os</a>
                     </li>
 
                 </ul>
@@ -261,13 +91,6 @@ display: none;
 
 
 
-    <!--
-    <div id="top_tag_line" class="p-5">
-        <div class="tag_text">
-            <h1>You know you wants to</h1>
-        </div>
-    </div>
--->
 
     <section id="about" class="">
         <div class="container">
@@ -295,7 +118,7 @@ display: none;
                 <img src="billeder/produkt/MockUp-kiwi_frugt.png" alt="">
             </div>
             <div class="row">
-                <div class=" col-6 offset-3 text-center">
+                <div class=" col-10 offset-1 col-md-8 offset-md-2 p-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa, corporis sapiente laudantium? Maiores est esse facere quis itaque ullam assumenda molestiae vitae facilis autem, reprehenderit labore dolorum quo quibusdam!</p>
                 </div>
             </div>
@@ -320,22 +143,12 @@ display: none;
             </div>
         </section>
 
-        <section id="Find">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Find os nær dig</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <section id="Alle_produkter" class="">
             <div class="container px-5">
                 <div class="row">
                     <div class=" col-12 text-center">
-                        <h1>Alle vores pordukter</h1>
+                        <h1>Vores produkter</h1>
                     </div>
                 </div>
                 <div class="row ">
@@ -356,6 +169,16 @@ display: none;
                         <div class="pro_tekst">
                             <h5>Litchi</h5>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Find">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Find os nær dig</h1>
                     </div>
                 </div>
             </div>
@@ -383,13 +206,13 @@ display: none;
                 </div>
                 <div class="row">
                     <div class="col-4 text-center">
-                        <p>hej</p>
+                        <p>Kontakt</p>
                     </div>
                     <div class="col-4 text-center">
-                        <p>hej</p>
+                        <p>Spørgsmål</p>
                     </div>
                     <div class="col-4 text-center">
-                        <p>hej</p>
+                        <p>Privacy Policy</p>
                     </div>
                 </div>
             </div>
