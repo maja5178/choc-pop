@@ -13,7 +13,7 @@
 
  html {
      scroll-behavior: smooth;
-     scroll-padding-top: 90px;
+     scroll-padding-top: 75px;
  }
 
  .baggrund_container {
@@ -46,16 +46,17 @@
      font-family: 'Roboto', sans-serif;
      color: #F9F3E1;
      font-weight: 400;
-     font-size: 1.3rem;
+     font-size: 1.1rem;
+     letter-spacing: 0.7px;
 
  }
 
  h5 {
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Lobster', cursive;
      color: #F9F3E1;
      font-weight: 500;
-     font-size: 2.5rem;
-     letter-spacing: 1px;
+     font-size: 3.4rem;
+     letter-spacing: 1.1px;
  }
 
  p {
@@ -88,6 +89,21 @@
  .navbar-light .navbar-toggler {
      border-color: #F9F3E1;
  }
+
+ a {
+     color: #F4AD3B !important;
+ }
+
+ a:hover {
+     color: #EB6127 !important;
+ }
+
+ /*
+ button navbar-toggler-icon {
+     color: #EB6127 !important;
+ }
+*/
+
 
  .bg-light {
      background-color: #F9F3E1 !important;
@@ -168,7 +184,7 @@
  .pro_tekst {
      position: absolute;
      top: 35%;
-     left: 41%;
+     left: 35%;
      transition: .5s ease;
      display: none
  }
@@ -190,13 +206,35 @@
      margin-bottom: 8vw;
  }
 
+ iframe {
+     width: 100%;
+     height: 150%
+ }
 
  /****************    #FIND SLUT   ********************/
 
  /****************    footer   ********************/
  footer {
-     background-color: blue;
+     background-color: #F4AD3B;
 
+ }
+
+ footer p {
+     color: #F4ECCC;
+ }
+
+ footer h6 {
+     color: #F4ECCC;
+     font-size: 1.2rem;
+ }
+
+ footer p:hover {
+     color: #EB6127;
+     font-size: 1rem;
+ }
+
+ footer img:hover {
+     transform: scale(1.15)
  }
 
 
